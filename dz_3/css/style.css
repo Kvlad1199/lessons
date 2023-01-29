@@ -1,0 +1,40 @@
+@import url(reset.css);
+h1 {
+	color: black;
+}
+header p{
+	color: red;
+}
+.overview_content .mark_list{
+	
+	color: red;
+}
+[class*="sub"] {
+	color: green;
+}
+.num_list{
+	color: cadetblue;
+}
+#zm-3,
+#zm-5 {
+color: chartreuse;
+}
+#zm-2{
+	color: crimson;
+}
+#zm-4-1~p{
+color: darkmagenta;
+}
+#zm-4-2 + .mark_list{
+	color: darkorange;
+}
+.notes_content{
+	color: aqua;
+}
+.link_content .mark_list a{
+	color:brown;
+}
+footer{
+	color: yellow;
+}
+

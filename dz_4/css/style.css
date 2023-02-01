@@ -1,0 +1,89 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+
+@font-face {
+	font-family: "Emirose";
+	src: url("../fonts/Emirose\ Thin.woff2") format("woff2"), url("../fonts/Emirose\ Thin.woff") format("woff");
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Emirose";
+	src: url("../fonts/Emirose\ Light.woff2") format("woff2"), url("../fonts/Emirose\ Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Emirose";
+	src: url("../fonts/Emirose\ Regular.woff2") format("woff2"), url("../fonts/Emirose\ Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Emirose";
+	src: url("../fonts/Emirose\ Bold.woff2") format("woff2"), url("../fonts/Emirose\ Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+body{
+	font-family:"Oswald", sans-serif;
+	font-size: 13px;
+	background-color: rgba(59, 73, 74, 0.7);
+	font-weight: 300;
+
+}
+h1{
+	font-family:"Merriweather", serif;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: 700;
+	text-align: center;
+	color: #cd7f32;
+	text-transform: uppercase;
+}
+header p{
+	
+	font-size: 18px;
+	font-weight: 300;
+	text-align: right;
+}
+.sub_num_list {
+	text-indent: 20px;
+}
+.sub_sub_num_list {
+	text-indent: 40px;
+}
+.bold_text{
+	font-weight: 500;
+}
+.italic_text{
+	font-style: italic;
+	text-shadow: 2px 2px 5px rgb(139, 179, 38)
+}
+h2{
+	font-weight: 500;
+	font-size: 22px;
+	letter-spacing: 2px;
+	line-height: 1.5;
+
+}
+h3{
+	text-decoration: underline;
+	font-weight: 500;
+	font-size: 20;
+}
+h4{
+	color: #d49352db;
+	text-decoration:line-through;
+	font-weight: 500;
+	font-size: 17;
+}
+
+
+
+

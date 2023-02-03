@@ -1,0 +1,123 @@
+@import url(reset.css);
+
+body{
+	font-family: "Poppins",sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.78;
+	color: #6C757D;
+	background: #E5E5E5;
+}
+.page {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+.text_wrap {
+	max-width: 816px;
+	margin: 0 auto;
+}
+.title {
+	font-weight: 700;
+font-size: 25px;
+line-height: 1.6;
+color: #212529;
+margin-bottom: 40px;
+}
+.title_1 {
+	max-width: 400px;
+}
+.title_2 {
+	max-width: 605px;
+}
+.image_block,
+.text{
+	margin-bottom: 80px;
+}
+.text p{
+	margin-bottom: 30px;
+}
+
+.images_block {
+	display: inline-block;
+	margin-bottom: 80px;
+}
+.img_1 {
+	margin: 0 13px 0 0;
+}
+.img_2 {
+	margin-left: 13px;
+}
+
+/* ------------------------test---------------------------------- */
+/* ------------------------------------------------------------- */
+
+.test_1{
+	font-size: 16px;
+	background-color: rgb(188, 56, 56);
+	display: inline-block;
+	max-width: 300px;
+	min-height: 400px;
+	
+}
+.test_2{
+	vertical-align: top;
+	font-size: 16px;
+	background-color: rgb(208, 140, 15);
+	display: inline-block;
+	max-width: 300px;
+	min-height: 400px;
+}
+.test_3{
+	padding-top: 47px;
+	padding-left: 17px;
+	vertical-align: top;
+	font-size: 16px;
+	background-color: rgb(60, 208, 15);
+	display: inline-block;
+	max-width: 300px;
+	min-height: 400px;
+}
+.test_4{
+	overflow: scroll;
+	vertical-align: top;
+	font-size: 16px;
+	display: inline-block;
+	max-width: 300px;
+	max-height: 400px;
+	font-size: 16px;
+	background-color: rgb(15, 208, 118);
+	
+}
+.test_text_mar{
+	margin-bottom: 25px;
+}
+.test_5{
+	
+	padding: 18px;
+	width: 285px;
+	margin: 0 auto 26px;
+	font-size: 16px;
+	background-color: rgb(15, 47, 208);
+}
+.test_6{
+	
+	font-size: 16px;
+	background-color: rgb(192, 15, 208);
+}
+.test_7{
+	display: block;
+	font-size: 16px;
+	background-color: rgb(95, 10, 63);
+}
+.training_container{
+	font-size: 0;
+}
+/* .training_container .text{
+	
+	margin-bottom: 0;
+} */
+
+
+
+
+

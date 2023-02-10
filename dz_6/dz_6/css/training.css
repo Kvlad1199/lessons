@@ -1,0 +1,63 @@
+@import url(reset.css);
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap);
+[class*="__container"]{
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+body{
+	font-family: "Poppins",sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+.training{
+	padding-top:40px;
+	padding-bottom: 40px;
+}
+/* ========================================================= */
+.training_link {
+	text-align: center;
+	margin-bottom: 45px;
+}
+.link {
+	padding: 12px;
+	border-radius: 15%;
+	background-color: rgba(143, 151, 52, 0.812);
+}
+.link:hover{
+	outline: 4px solid gold;
+}
+/* ========================================================= */
+[class*="text"]{
+	margin-bottom: 55px;
+}
+.text_box {
+	max-width: 1000px;
+	margin: 0 auto;
+	opacity: 0.6;
+	
+}
+.text_1 {
+	visibility: hidden;
+}
+.text_2 {
+	border-right: 4px dotted blue;
+	border-left: 3px solid #872253;
+}
+.text_3 {
+	box-shadow: 5px 5px 10px 1px #1f9816, -10px 6px 10px 0px #0d194c, 10px -20px 30px 3px #595c4f79;
+}
+.text_4 {
+	text-align: center;
+	background-color: #a32222;
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	overflow: hidden;
+}
+.text_5 {
+	display: inline;
+	outline: 2px dashed rgb(26, 91, 91);
+
+}

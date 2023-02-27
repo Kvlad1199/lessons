@@ -1,0 +1,53 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css?family=Inter:400,700&display=swap");
+/* ============================================================================================================================== */
+body{
+	font-family: "Inter" ,sans-serif;
+}
+[class*="__container"]{
+	max-width: 1470px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+h2{
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+p{
+	margin-bottom: 5px;
+}
+img{
+	max-width: 100%;
+}
+/* ============================================================================================================================== */
+header{
+	background-color: #45d1259d;
+}
+.header__icons > *{
+	margin-right: 45px;
+}
+.header__icons > *:last-child{
+	margin-right: 0;
+}
+.header__content-icons > img{
+	margin-right: 45px;
+}
+.header__content-icons > img:last-child{
+	margin-right: 0;
+}
+/* ============================================================================================================================== */
+main{
+	background-color: #be2828;
+}
+main img:not(:first-child,:last-child){
+	border-radius: 8px;
+}
+main img:last-child{
+	
+	border-radius: 50%;
+}
+/* ============================================================================================================================== */
+footer{
+	background-color: #5e7914;
+}

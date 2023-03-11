@@ -1,0 +1,341 @@
+@import url(reset.css);
+@import url(common.css);
+@import url("https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap");
+
+/* ========================================================================================================================================================================  */
+[class*="__container"]{
+	max-width: 1200px;
+	padding:  0 15px;
+	margin: 0 auto;
+}
+.wraper{
+	overflow: clip;
+	min-height: 100%;
+}
+body{
+	font-family: "Inter",sans-serif;
+	font-weight: 500;
+	color: #637381;
+	background-color: #E5E5E5;
+
+}
+
+/* ========================================================================================================================================================================  */
+.header {
+	background-color: #ffffff;
+}
+.wraper__header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.header__logo {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-right: 42px;
+}
+/* ========================================================================================================================================================================  */
+.header__nav {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 120px;
+	font-weight: 600;
+	line-height: 1.18;
+	color: #212B36;
+	
+}
+.nav {
+}
+
+.nav__items {
+	display: inline-block;
+	vertical-align: middle;
+	
+}
+.nav__item {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	
+}
+.nav__item:not(:last-child){
+	margin-right: 20px;
+}
+.nav__item--arrow .nav__link {
+	padding-right: 35px;
+}
+.nav__item--arrow .nav__link::after {
+	content: "";
+	display: inline-block;
+	width: 11px;
+	height: 6px;
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	background: url(../img/arrow.svg)no-repeat;
+	
+}
+.nav__link {
+	display: inline-block;
+	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+
+}
+.nav__item:hover .nav__link{
+	color: #3056D3;
+}
+.nav__item--arrow:hover .nav__link {
+	background-color: #F4F7FF;
+	border-radius: 5px;
+	color: #212B36;
+}
+
+
+.nav__item:hover .nav__menu{
+	opacity: 1;
+	visibility: visible;
+}
+
+/* ================================= */
+.nav__menu {
+	color: #637381;
+	width: 180px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding-top: 40px;
+	opacity: 0;
+	visibility: hidden;
+}
+.menu {
+}
+.menu__items {
+	background-color: #fff;
+	padding: 22px 0;
+	border: 0.5px solid #E7E7E7;
+	border-radius: 5px;
+	position: relative;
+}
+.menu__items::before{
+	content: "";
+	width: 32px;
+	height: 20px;
+	background:url(../img/triangle.svg) no-repeat;
+	position: absolute;
+	border-radius: 2px;
+	top: -10px;
+	left: 10px;
+	
+}
+.menu__item{
+	position: relative;
+}
+.menu__item:hover .menu__link {
+	color: #3056D3;
+}
+.menu__item:not(:last-child){
+	margin-bottom: 13px;
+}
+.menu__link {
+	padding: 0 24px;
+	display: block;
+}
+.menu__item--arrow .menu__link::after {
+	content: "";
+	display: inline-block;
+	width: 11px;
+	height: 6px;
+	position: absolute;
+	top: 30%;
+	right: 24px;
+	background: url(../img/arrow.svg)no-repeat;
+	transform: rotate(-90deg);
+	
+}
+
+/* ================================================= */
+.menu__sub-menu {
+	width: 660px;
+	background: #FFFFFF;
+	border: 0.5px solid #E7E7E7;
+	border-radius: 5px;
+	position: absolute;
+	top: -30px;
+	left: 100%;
+	opacity: 0;
+	visibility: hidden;
+}
+.menu__item:hover .menu__sub-menu{
+	opacity: 1;
+	visibility: visible;
+}
+.sub-menu {
+	padding: 30px;
+}
+.sub-menu .sub-menu__column:nth-child(1){
+	margin-right: 80px;
+}
+.sub-menu .sub-menu__column:nth-child(2){
+	margin-right: 60px;
+}
+
+.sub-menu__column {
+	display: inline-block;
+	vertical-align: top;
+}
+.sub-menu__title {
+	line-height: 1.5;
+	font-weight: 600;
+	color: #212B36;
+	
+}
+.sub-menu__title:not(:last-child){
+	margin-bottom: 20px;
+}
+.sub-menu__list {
+}
+.sub-menu__item:hover .sub-menu__link {
+	color: #3056D3;
+}
+.sub-menu__item:not(:last-child) {
+	margin-bottom: 12px;
+}
+.sub-menu__link {
+}
+.sub-menu__banner {
+	display: inline-block;
+	color: #FFFFFF;
+	position: relative;
+	
+	
+}
+.sub-menu__price {
+	position: relative;
+	display: inline-block;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.2;
+	margin-left: 60px;
+	margin-top: 60px;
+	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.22);
+}
+.sub-menu__text {
+	position: relative;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.2;
+	margin-left: 39px;
+	margin-bottom: 20px;
+	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.24);
+}
+.sub-menu__button {
+	position: relative;
+	display: inline-block;
+	text-transform: capitalize;
+	background-color: #3056D3;
+	border-radius: 2px;
+	padding: 5px 13px 7px 15px;
+	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.14);
+	margin-left: 48px;
+}
+.sub-menu__button:hover{
+	background-color: #2f53ccbb;
+}
+.sub-menu__image {
+	height: 220px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* ========================================================================================================================================================================  */
+.header__actions {
+	display: inline-block;
+	vertical-align: middle;
+}
+.actions {
+}
+.actions__link {
+	position: relative;
+	display: inline-block;
+}
+.actions__link:not(:last-child)
+{
+	margin-right: 21px;
+}
+.actions__value {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	background-color: #3056D3;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 1.18;
+	color: #FFFFFF;
+	border-radius: 50%;
+}
+/* ========================================================================================================================================================================  */
+main{
+	padding-top: 100px;
+}
+
+
+/* ======================================================================================================================= */
+.main__title {
+	font-size: 36px;
+	display: inline-block;
+	width: 50%;
+	background-color: #637381;
+	color: #E5E5E5;
+	text-align: center;
+	position: sticky;
+	top: 100px;
+	height: 40px;
+	}
+.main__sub-title {
+	font-size: 36px;
+	display: inline-block;
+	width: 50%;
+	background-color: #637381;
+	color: #E5E5E5;
+	text-align: center;
+	margin-left: 50%;
+	position: sticky;
+	top: 100px;
+}
+
+/* ========================================================================================================================================================================  */
+
+
+/* ========================================================================================================================================================================  */
+
+
+/* ========================================================================================================================================================================  */
+
+
+/* ========================================================================================================================================================================  */
+
+
+/* ========================================================================================================================================================================  */
+
+/* ========================================================================================================================================================================  */

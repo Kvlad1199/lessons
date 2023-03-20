@@ -108,7 +108,7 @@ body{
 	flex-direction: column;
 	row-gap: 15px;
 }
-/* =================== */
+/* !!! Чи можна робити такий відступ між картинкою та текстом row-gap:15px; + margin-bottom:15px; ? */
 .column {
 
 }

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Hw 16</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="components-tg">
+      <div class="components-tg__container">
+        <div class="components-tg__header header-ctg">
+          <h2 class="header-ctg__title">Checkout</h2>
+          <div class="header-ctg__text">
+            <p>There are 3 products in your cart</p>
+          </div>
+        </div>
+        <div class="components-tg__main">
+          <form action="#" class="components-tg__form" enctype="multipart/form-data" method="post">
+            <h3 class="components-tg__title">Billing Details</h3>
+            <div class="components-tg__column column-ctg">
+              <div class="column-ctg__item">
+                <input class="column-ctg__input" type="text" placeholder="First name*" required autocomplete="off"
+                  name="Fname">
+              </div>
+              <div class="column-ctg__item">
+                <input class="column-ctg__input" type="text" placeholder="Last name*" required autocomplete="off"
+                  name="Lname">
+              </div>
+              <div class="column-ctg__item">
+                <input class="column-ctg__input" type="text" placeholder="Address*" required autocomplete="off"
+                  name="address">
+              </div>
+              <div class="column-ctg__item">
+                <input class="column-ctg__input" type="text" placeholder="Address line 2" autocomplete="off"
+                  name="address2">
+              </div>
+              <div class="column-ctg__item column-ctg__item--after">
+                <select class="column-ctg__select" name="county" required>
+                  <option disabled selected hidden value="">Address*</option>
+                  <option value="Fr">France</option>
+                  <option value="Pl">Poland</option>
+                  <option value="Uk">Ukraine</option>
+                  <option value="Sp">Spanish</option>
+                </select>
+              </div>
+              <div class="column-ctg__item">
+                <input class="column-ctg__input" type="text" placeholder="City/Town*" required autocomplete="off"
+                  name="city">
+              </div>
+              <div class="column-ctg__item">
+                <input class="column-ctg__input" type="text" placeholder="Postcode / ZIP*" required autocomplete="off"
+                  name="zip">
+              </div>
+              <div class="column-ctg__item">
+                <input class="column-ctg__input" type="tel" placeholder="Phone*" required autocomplete="off"
+                  name="phone">
+              </div>
+              <div class="column-ctg__item">
+                <input class="column-ctg__input" type="text" placeholder="Postcode / ZIP*" required autocomplete="off"
+                  name="zip">
+              </div>
+              <div class="column-ctg__item">
+                <input class="column-ctg__input" type="tel" placeholder="Phone*" required autocomplete="off"
+                  name="phone">
+              </div>
+              <div class="column-ctg__item column-ctg__item--ba">
+                <textarea class="column-ctg__text-area" name="add_info" autocomplete="off"
+                  placeholder="Additional information"></textarea>
+              </div>
+            </div>
+            <div class="components-tg__check-boxes">
+              <div class="components-tg__check-box check-box">
+                <input checked id="c-b-1" type="checkbox" class="check-box__input" value="yes" name="create-account">
+                <label for="c-b-1" class="check-box__label">Create Account</label>
+              </div>
+              <div class="components-tg__check-box check-box">
+                <input id="c-b-2" type="checkbox" class="check-box__input" value="yes" name="create-account">
+                <label for="c-b-2" class="check-box__label">Ship to a different address?</label>
+              </div>
+            </div>
+            <div class="components-tg__footer footer-ctg">
+              <h3 class="footer-ctg__title">Apply Coupon to get discount!</h3>
+              <div class="footer-ctg__item">
+                <input type="text" class="footer-ctg__input" autocomplete="off" placeholder="Coupon code" name="code">
+                <button class="footer-ctg__button" type="button">Apply Code</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="ecommerce">
+      <div class="ecommerce__container">
+        <form action="#" method="post" enctype="multipart/form-data" class="ecommerce__login login-ecommerce">
+          <h2 class="login-ecommerce__title">Shipping Address</h2>
+          <div class="login-ecommerce__item">
+            <label for="user-email" class="login-ecommerce__label">Email Address <span>*</span></label>
+            <input id="user-email" type="email" class="login-ecommerce__input" required name="user-email"
+              placeholder="roni_cost@example.com">
+          </div>
+          <div class="login-ecommerce__item">
+            <label for="user-pass" class="login-ecommerce__label">Password</label>
+            <input id="user-pass" type="password" class="login-ecommerce__input" required name="user-pass"
+              placeholder="******************">
+          </div>
+          <div class="login-ecommerce__item">
+            <label for="zip-code" class="login-ecommerce__label">Zip/Postal Code</label>
+            <input id="zip-code" type="text" class="login-ecommerce__input" name="zip-code">
+          </div>
+          <div class="login-ecommerce__text">
+            <p>You already have an account with us. Sign in or continue as guest.</p>
+          </div>
+          <div class="login-ecommerce__buttons">
+            <button class="login-ecommerce__button button" type="submit">login</button>
+            <a href="#" class="login-ecommerce__link">Forgot Your Password?</a>
+          </div>
+        </form>
+        <form action="#" class="ecommerce__registretion registretion" method="get" enctype="multipart/form-data">
+          <div class="registretion__items">
+            <div class="registretion__item">
+              <label for="f-name" class="registretion__label">First Name <span>*</span></label>
+              <input id="f-name" required name="f-name" type="text" class="registretion__input">
+            </div>
+            <div class="registretion__item">
+              <label for="l-name" class="registretion__label">Last Name <span>*</span></label>
+              <input id="l-name" required name="l-name" type="text" class="registretion__input">
+            </div>
+            <div class="registretion__item">
+              <label for="company" class="registretion__label">Company</label>
+              <input id="company" name="company" type="text" class="registretion__input">
+            </div>
+            <div class="registretion__item registretion__item--dop">
+              <label for="address" class="registretion__label">Street Address <span>*</span></label>
+              <div class="registretion__inputs">
+                <input id="address" required name="address" type="text" class="registretion__input">
+                <input id="address-2" name="address-2" type="text" class="registretion__input">
+                <input id="address-3" name="address-3" type="text" class="registretion__input">
+              </div>
+            </div>
+
+            <div class="registretion__item">
+              <label for="country" class="registretion__label">Country <span>*</span></label>
+              <input id="country" required name="country" type="text" class="registretion__input">
+            </div>
+            <div class="registretion__item registretion__item--select">
+              <label for="state" class="registretion__label">State/Province <span>*</span></label>
+              <select name="state" id="state" class="registretion__select" required>
+                <option value="" selected disabled hidden class="registretion__option">Please select a region, state or
+                  province</option>
+                <option value="En" class="registretion__option">England</option>
+                <option value="Ua" class="registretion__option">Ukraine</option>
+              </select>
+            </div>
+          </div>
+          <h2 class="registretion__title">Shipping Methods</h2>
+          <div class="registretion__bottom bottom-block">
+            <div class="bottom-block__items">
+              <div class="bottom-block__item">
+                <input type="radio" class="bottom-block__input" checked value="5" name="price" id="chb-1">
+                <label for="chb-1" class="bottom-block__label">$5.00</label>
+              </div>
+              <div class="bottom-block__middle">Fixed</div>
+              <div class="bottom-block__last">Flat Rate</div>
+            </div>
+
+            <div class="bottom-block__items">
+              <div class="bottom-block__item">
+                <input type="radio" class="bottom-block__input" value="10" name="price" id="chb-2">
+                <label for="chb-2" class="bottom-block__label">$10.00</label>
+              </div>
+              <div class="bottom-block__middle">Table Rate</div>
+              <div class="bottom-block__last">Best Way</div>
+            </div>
+          </div>
+          <div class="registretion__buttons">
+            <button class="registretion__button button">next</button>
+            <button class="registretion__button button button--gray">Back</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
